@@ -18,11 +18,11 @@ const About = () => {
         <Grid item lg={6} md={12} xs={12}>
           <p className="typography-desc dark:text-grey-dark text-grey-dark-active">
             <a className="dark:text-base-light text-base-dark font-medium">
-              I'm a Software Engineer with 3+ years of experience, specializing
-              in frontend technologies.
+              {`I'm a Software Engineer with 3+ years of experience, specializing
+              in frontend technologies.`}
             </a>{" "}
-            I'm based in Jakarta and have a strong interest in exploring new
-            frontend{" "}
+            {`I'm based in Jakarta and have a strong interest in exploring new
+            frontend`}{" "}
             <a
               href="#tools"
               className="dark:text-base-light text-base-dark font-medium"
@@ -41,9 +41,9 @@ const About = () => {
             >
               My Work
             </a>{" "}
-            below. I'm passionate about research, analysis, refactoring, and
+            {`below. I'm passionate about research, analysis, refactoring, and
             ensuring code scalability and quality. I take immense pride in my
-            work and have a deep love for the code I create.
+            work and have a deep love for the code I create.`}
             <br />
             <br />{" "}
             <a className="dark:text-base-light text-base-dark font-medium">
@@ -64,7 +64,7 @@ const About = () => {
             >
               LinkedIn.
             </a>{" "}
-            I'd be happy to answer them.
+            {`I'd be happy to answer them.`}
           </p>
         </Grid>
       </Grid>
