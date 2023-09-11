@@ -1,0 +1,11 @@
+@mixin fontAttribute($weight, $line-height, $font-size) {
+  @if $line-height {
+    line-height: $line-height;
+  }
+  @if $weight {
+    font-weight: $weight;
+  }
+  @if $font-size {
+    font-size: $font-size !important;
+  }
+}

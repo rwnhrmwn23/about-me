@@ -1,0 +1,115 @@
+.typography-hello {
+  letter-spacing: -4px;
+  @include fontAttribute(600, 100px, 110px);
+}
+
+.typography-hello-mobile {
+  letter-spacing: -2px;
+  @include fontAttribute(600, 60px, 60px);
+}
+
+.typography-title {
+  letter-spacing: -1px;
+  @include fontAttribute(600, 80px, 85px);
+}
+
+.typography-title-mobile {
+  letter-spacing: -1px;
+  @include fontAttribute(600, 55px, 50px);
+}
+
+.typography-desc {
+  letter-spacing: 0.6px;
+  @include fontAttribute(400, 28px, 16px);
+}
+
+.typography-section {
+  letter-spacing: 0.8px;
+  @include fontAttribute(400, 75px, 60px);
+}
+
+.typography-section-title {
+  letter-spacing: 0.8px;
+  @include fontAttribute(400, 30px, 30px);
+}
+
+.typography-section-desc {
+  letter-spacing: 1px;
+  @include fontAttribute(200, 32px, 22px);
+}
+
+.typography-h900 {
+  letter-spacing: -0.1px;
+  @include fontAttribute(700, 40px, 36px);
+}
+
+.typography-h800 {
+  letter-spacing: -0.1px;
+  @include fontAttribute(600, 32px, 28px);
+}
+
+.typography-h700 {
+  letter-spacing: -0.1px;
+  @include fontAttribute(500, 28px, 24px);
+}
+
+.typography-h600 {
+  @include fontAttribute(500, 24px, 20px);
+}
+
+.typography-h500-longform {
+  @include fontAttribute(500, 24px, 16px);
+}
+
+.typography-h500 {
+  @include fontAttribute(500, 20px, 16px);
+}
+
+.typography-h400-longform {
+  @include fontAttribute(500, 24px, 14px);
+}
+
+.typography-h400 {
+  @include fontAttribute(500, 16px, 14px);
+}
+
+.typography-h300 {
+  @include fontAttribute(500, 16px, 12px);
+  text-transform: uppercase;
+}
+
+.typography-h200 {
+  @include fontAttribute(500, 16px, 12px);
+}
+
+.typography-h100 {
+  @include fontAttribute(400, 16px, 12px);
+}
+
+.typography-paragraph {
+  @include fontAttribute(400, 24px, 14px);
+}
+
+.typography-form {
+  @include fontAttribute(400, 24px, 14px);
+}
+
+.typography-button {
+  @include fontAttribute(400, 16px, 14px);
+}
+
+.typography-link {
+  @include fontAttribute(400, 20px, 14px);
+  color: var(--base-600);
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.typography-secondary {
+  color: var(--n-800);
+}
+.typography-tertiary {
+  color: var(--n-600);
+}
