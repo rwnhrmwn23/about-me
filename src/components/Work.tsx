@@ -78,7 +78,10 @@ const Work = () => {
             >
               <Grid item xs={12}>
                 <Image
-                  layout="responsive"
+                  style={{
+                    width: "100%",
+                    height: "auto",
+                  }}
                   className="rounded-[8px]"
                   alt={data?.title}
                   src={data?.img}
