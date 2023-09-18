@@ -36,7 +36,7 @@ const About = () => {
             <br />
             You can check out some of{" "}
             <a
-              href=""
+              href="#work"
               className="dark:text-base-light text-base-dark font-medium"
             >
               My Work
