@@ -1,7 +1,7 @@
 import DesktopView from "./navigation/DesktopView";
 import MobileView from "./navigation/MobileView";
 
-const navigation = ["about", "tools", "work", "contact"];
+const navigation = ["about", "tools", "work"];
 
 const Navigation = ({ colorTheme }: { colorTheme: string }) => {
   return (
