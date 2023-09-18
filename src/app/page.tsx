@@ -19,8 +19,8 @@ export default function Home() {
       <About />
       <Tools />
       <Work />
-      {/* <ToogleDarkmode colorTheme={colorTheme} setTheme={setTheme} /> */}
-      <Footer />
+      <Footer colorTheme={colorTheme} />
+      <ToogleDarkmode colorTheme={colorTheme} setTheme={setTheme} />
     </div>
   );
 }
