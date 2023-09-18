@@ -52,7 +52,10 @@ const Work = () => {
   return (
     <WrapperSection id="work">
       <div className="flex flex-col gap-[20px] mt-[20px]">
-        <p className="typography-section font-bold dark:text-base-light text-base-dark">
+        <p className="typography-title-mobile lg:hidden dark:text-base-light text-base-dark">
+          Work
+        </p>
+        <p className="typography-title mb:hidden lg:block dark:text-base-light text-base-dark">
           Work
         </p>
         <div className="flex flex-row gap-[4px]">
@@ -87,17 +90,17 @@ const Work = () => {
                   src={data?.img}
                 />
               </Grid>
-              <Grid item container xs={12} spacing="16px" alignItems="start">
+              <Grid item container xs={12} spacing="8px" alignItems="start">
                 <Grid
                   item
                   container
                   xs={12}
                   alignItems="center"
-                  spacing="16px"
+                  spacing="8px"
                   justifyContent="space-between"
                 >
                   <Grid item xs={12}>
-                    <p className="typography-section-title dark:text-base-light text-base-dark !leading-[40px]">
+                    <p className="typography-title !text-[30px] !leading-[40px] dark:text-base-light text-base-dark">
                       {data?.title}
                     </p>
                   </Grid>

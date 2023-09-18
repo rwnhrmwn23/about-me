@@ -6,6 +6,6 @@
     font-weight: $weight;
   }
   @if $font-size {
-    font-size: $font-size !important;
+    font-size: $font-size;
   }
 }

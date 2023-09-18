@@ -2,19 +2,7 @@ import React from "react";
 
 import Link from "next/link";
 import Logo from "@/components/Logo";
-
-const Email = () => {
-  return (
-    <div
-      className="mx-[18px] p-[10px] rounded-[5px] border border-solid dark:border-base-light-active border-base-dark-active cursor-pointer dark:hover:bg-[#ffffff1a] hover:bg-base-light-hover"
-      onClick={() => window.open("mailto:haryarrahman14@gmail.com", "_blank")}
-    >
-      <p className="typography-h200 dark:text-base-light-active text-base-dark-active uppercase">
-        haryarrahman14@gmail.com
-      </p>
-    </div>
-  );
-};
+import SocialMedia from "@/components/SocialMedia";
 
 const DesktopView = ({
   colorTheme,
@@ -42,7 +30,9 @@ const DesktopView = ({
         })}
       </div>
 
-      <Email />
+      <div className="px-[18px] py-[30px]">
+        <SocialMedia colorTheme={colorTheme} />
+      </div>
     </div>
   );
 };

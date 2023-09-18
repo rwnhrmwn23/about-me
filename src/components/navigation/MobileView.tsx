@@ -6,6 +6,7 @@ import Logo from "@/components/Logo";
 import SidebarIcon from "./SidebarIcon";
 
 import { motion } from "framer-motion";
+import SocialMedia from "../SocialMedia";
 
 const MobileView = ({
   colorTheme,
@@ -72,6 +73,10 @@ const MobileView = ({
                   </div>
                 );
               })}
+
+              <div className="flex items-center h-[80px]">
+                <SocialMedia colorTheme={colorTheme} />
+              </div>
             </div>
           </div>
         </motion.div>

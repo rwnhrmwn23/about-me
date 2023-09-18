@@ -50,10 +50,10 @@ const Particle = ({ colorTheme }: { colorTheme: string }) => {
         },
         particles: {
           color: {
-            value: colorTheme == "dark" ? "#121212" : "#b6b6b6",
+            value: colorTheme == "dark" ? "#121212" : "#dbdbdb",
           },
           links: {
-            color: colorTheme == "dark" ? "#121212" : "#b6b6b6",
+            color: colorTheme == "dark" ? "#121212" : "#dbdbdb",
             distance: 150,
             enable: true,
             opacity: 0.5,

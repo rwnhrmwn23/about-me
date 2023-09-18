@@ -7,11 +7,37 @@ import nextjs from "../../public/tools/nextjs.webp";
 import react from "../../public/tools/react.png";
 import other from "../../public/tools/other.svg";
 
+const tools = [
+  {
+    title: "Typescript",
+    desc: "A robust programming language with strict typing to eliminate bugs and enhance scalability.",
+    src: typescript,
+  },
+  {
+    title: "Next js",
+    desc: "Develop full-stack web applications by leveraging the latest features in React.js.",
+    src: nextjs,
+  },
+  {
+    title: "React",
+    desc: " Create applications for the web, Android, iOS, and beyond with the power of React.",
+    src: react,
+  },
+  {
+    title: "Other",
+    desc: "Other Frontend Technology tools, like React Query, Zustand, PHP, Cypress, Storybook, Amplitude, Figma, Tailwind CSS, Material UI, and much more.",
+    src: other,
+  },
+];
+
 const Tools = () => {
   return (
     <WrapperSection id="tools">
       <div className="flex flex-col gap-[20px] mt-[20px]">
-        <p className="typography-section font-bold dark:text-base-light text-base-dark">
+        <p className="typography-title-mobile lg:hidden dark:text-base-light text-base-dark">
+          Tools
+        </p>
+        <p className="typography-title mb:hidden lg:block dark:text-base-light text-base-dark">
           Tools
         </p>
         <div className="flex flex-row gap-[4px]">
@@ -23,66 +49,29 @@ const Tools = () => {
       </div>
 
       <Grid container spacing="40px">
-        <Grid item lg={6} md={12}>
-          <div className="flex flex-row items-start gap-[20px]">
-            <Image height={120} width={120} alt="typescript" src={typescript} />
-            <div className="flex flex-col gap-[8px] ">
-              <p className="typography-section-title dark:text-base-light text-base-dark">
-                Typescript
-              </p>
-              <p className="typography-desc dark:text-grey-light-active text-base-dark-light ">
-                A robust programming language with strict typing to eliminate
-                bugs and enhance scalability.
-              </p>
-            </div>
-          </div>
-        </Grid>
-
-        <Grid item lg={6} md={12}>
-          <div className="flex flex-row items-start gap-[20px]">
-            <Image height={120} width={120} alt="nextjs" src={nextjs} />
-            <div className="flex flex-col gap-[8px] ">
-              <p className="typography-section-title dark:text-base-light text-base-dark">
-                Next js
-              </p>
-              <p className="typography-desc dark:text-grey-light-active text-base-dark-light ">
-                Develop full-stack web applications by leveraging the latest
-                features in React.js.
-              </p>
-            </div>
-          </div>
-        </Grid>
-
-        <Grid item lg={6} md={12}>
-          <div className="flex flex-row items-start gap-[20px]">
-            <Image height={120} width={120} alt="react" src={react} />
-            <div className="flex flex-col gap-[8px] ">
-              <p className="typography-section-title dark:text-base-light text-base-dark">
-                React
-              </p>
-              <p className="typography-desc dark:text-grey-light-active text-base-dark-light ">
-                Create applications for the web, Android, iOS, and beyond with
-                the power of React.
-              </p>
-            </div>
-          </div>
-        </Grid>
-
-        <Grid item lg={6} md={12}>
-          <div className="flex flex-row items-start gap-[20px]">
-            <Image height={120} width={120} alt="other" src={other} />
-            <div className="flex flex-col gap-[8px] ">
-              <p className="typography-section-title dark:text-base-light text-base-dark">
-                Other
-              </p>
-              <p className="typography-desc dark:text-grey-light-active text-base-dark-light ">
-                Other Frontend Technology tools, like React Query, Zustand, PHP,
-                Cypress, Storybook, Amplitude, Figma, Tailwind CSS, Material UI,
-                and much more.
-              </p>
-            </div>
-          </div>
-        </Grid>
+        {tools?.map((e, idx) => {
+          return (
+            <Grid key={idx} item lg={6} md={12}>
+              <div className="flex flex-row items-center gap-[20px]">
+                <Image
+                  height={120}
+                  width={120}
+                  alt={e?.title}
+                  src={e?.src}
+                  className="rounded-[8px]"
+                />
+                <div className="flex flex-col gap-[8px] ">
+                  <p className="typography-title !text-[30px] !leading-[30px] dark:text-base-light text-base-dark">
+                    {e?.title}
+                  </p>
+                  <p className="typography-desc dark:text-grey-light-active text-base-dark-light ">
+                    {e?.desc}
+                  </p>
+                </div>
+              </div>
+            </Grid>
+          );
+        })}
       </Grid>
     </WrapperSection>
   );
