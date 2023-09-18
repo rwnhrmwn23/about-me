@@ -1,3 +1,5 @@
+"use client";
+
 import "./globals.scss";
 import { Poppins } from "next/font/google";
 
@@ -15,6 +17,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <meta name="theme-color" content="#0e0e0e" />
+        <meta name="msapplication-navbutton-color" content="#0e0e0e" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#0e0e0e" />
+      </head>
+
       <body className={poppins.className}>{children}</body>
     </html>
   );
