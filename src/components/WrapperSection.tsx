@@ -8,12 +8,12 @@ const WrapperSection = ({
   children: React.ReactNode;
 }) => {
   return (
-    <section
-      id={id}
-      className="flex flex-col gap-[40px] px-[16px] lg:px-[60px] py-[40px]"
-    >
-      {children}
-    </section>
+    <>
+      <div id={id} />
+      <section className="flex flex-col gap-[40px] px-[16px] lg:px-[60px] py-[40px]">
+        {children}
+      </section>
+    </>
   );
 };
 
