@@ -18,7 +18,7 @@ const About = () => {
         <Grid item lg={6} md={12} xs={12}>
           <p className="typography-desc dark:text-grey-dark text-grey-dark-active">
             <a className="dark:text-base-light text-base-dark font-medium">
-              {`I'm a Software Engineer with 3+ years of experience, specializing
+              {`I'm a Software Engineer with 2+ years of experience, specializing
               in frontend technologies.`}
             </a>{" "}
             {`I'm based in Jakarta and have a strong interest in exploring new
