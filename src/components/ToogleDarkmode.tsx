@@ -6,7 +6,7 @@ const ToogleDarkmode = ({
   setTheme: (e: string) => void;
 }) => {
   return (
-    <div className="sticky bottom-[40px] ml-[30px] z-10 cursor-pointer">
+    <div className="sticky flex justify-end bottom-[40px] mr-[30px] z-10 cursor-pointer">
       {colorTheme === "light" ? (
         <svg
           onClick={() => setTheme("light")}
