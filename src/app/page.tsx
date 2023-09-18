@@ -7,6 +7,7 @@ import About from "@/components/About";
 import useDarkMode from "@/hooks/useDarkTheme";
 import Tools from "@/components/Tools";
 import Work from "@/components/Work";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   const [colorTheme, setTheme]: any = useDarkMode();
@@ -19,6 +20,7 @@ export default function Home() {
       <Tools />
       <Work />
       {/* <ToogleDarkmode colorTheme={colorTheme} setTheme={setTheme} /> */}
+      <Footer />
     </div>
   );
 }
