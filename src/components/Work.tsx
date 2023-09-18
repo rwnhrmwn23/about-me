@@ -14,37 +14,38 @@ const work = [
     title: "Happy5",
     desc: "Performance management platform",
     img: happy5,
-    onClick: () => {},
+    onClick: () => window.open("https://happy5.co/", "_blank"),
   },
   {
     title: "Attendance Management for Administrator (Japan)",
     desc: "JA / Bulog Attendance Management Platform for Administrator",
     img: attendanceadmin,
-    onClick: () => {},
+    onClick: () =>
+      window.open("https://attendance-sys.ja-hakui.com/", "_blank"),
   },
   {
     title: "Attendance Stamping for Worker (Japan)",
     desc: "JA / Bulog Attendance Stamping Platform for Worker",
     img: stamping,
-    onClick: () => {},
+    onClick: () => window.open("https://stamping-sys.ja-hakui.com/", "_blank"),
   },
   {
     title: "BundledSEO Landing Page",
     desc: "Landing page for SEO Tools product",
     img: bundledseo,
-    onClick: () => {},
+    onClick: () => window.open("https://bundled-seo.vercel.app/", "_blank"),
   },
   {
     title: "Catering Management System Administrator (Japan)",
     desc: "Doi Masaru Catering Management System Platform for Administrator (On Progress)",
     img: cateringadmin,
-    onClick: () => {},
+    // onClick: () => {},
   },
   {
     title: "Catering Management System Worker (Japan)",
     desc: "Doi Masaru Catering Management System Platform for Worker (On Progress)",
     img: cateringuser,
-    onClick: () => {},
+    // onClick: () => {},
   },
 ];
 
@@ -66,7 +67,7 @@ const Work = () => {
         </div>
       </div>
 
-      <Grid container spacing="80px">
+      <Grid container alignItems="flex-start" spacing="80px">
         {work?.map((data, idx) => {
           return (
             <Grid
@@ -76,7 +77,6 @@ const Work = () => {
               lg={6}
               md={12}
               xs={12}
-              spacing="30px"
               alignItems="start"
             >
               <Grid item xs={12}>
@@ -90,34 +90,28 @@ const Work = () => {
                   src={data?.img}
                 />
               </Grid>
-              <Grid item container xs={12} spacing="8px" alignItems="start">
-                <Grid
-                  item
-                  container
-                  xs={12}
-                  alignItems="center"
-                  spacing="8px"
-                  justifyContent="space-between"
-                >
-                  <Grid item xs={12}>
-                    <p className="typography-title !text-[30px] !leading-[40px] dark:text-base-light text-base-dark">
-                      {data?.title}
-                    </p>
-                  </Grid>
-                  {/* <Grid item>
-                    <div
-                      className="p-[10px] rounded-[5px] border border-solid dark:border-base-light-active border-base-dark-active cursor-pointer dark:hover:bg-[#ffffff1a] hover:bg-base-light-hover"
-                      onClick={data?.onClick}
-                    >
-                      <p className="typography-desc dark:text-grey-light-active text-base-dark-light">{`See Details   >`}</p>
-                    </div>
-                  </Grid> */}
+              <Grid item container xs={12} spacing="16px" alignItems="start">
+                <Grid item xs={12}>
+                  <p className="typography-title !text-[30px] !leading-[40px] dark:text-base-light text-base-dark">
+                    {data?.title}
+                  </p>
                 </Grid>
                 <Grid item xs={12}>
                   <p className="typography-desc dark:text-grey-light-active text-base-dark-light">
                     {data?.desc}
                   </p>
                 </Grid>
+
+                {data?.onClick && (
+                  <Grid item>
+                    <div
+                      className="flex flex-row py-[8px] pl-[18px] pr-[12px] rounded-[5px] border border-solid dark:border-base-light-active border-base-dark-active cursor-pointer dark:hover:bg-[#ffffff1a] hover:bg-base-light-hover"
+                      onClick={data?.onClick}
+                    >
+                      <p className="typography-desc dark:text-grey-light-active text-base-dark-light">{`Visit Website   >`}</p>
+                    </div>
+                  </Grid>
+                )}
               </Grid>
             </Grid>
           );
