@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import { useDarkModeContext } from "@/hooks/DarkModeContex";
+
 import linkedindark from "../../public/social-media/linkedin-dark.svg";
 import linkedinlight from "../../public/social-media/linkedin-light.svg";
 import emaildark from "../../public/social-media/email-dark.svg";
@@ -11,7 +13,9 @@ import Particle from "./Particles";
 import { Grid } from "@mui/material";
 import ScrollLink from "./ScrollLink";
 
-const Hero = ({ colorTheme }: { colorTheme: string }) => {
+const Hero = () => {
+  const { colorTheme } = useDarkModeContext();
+
   return (
     <div className="relative flex justify-center items-center h-[calc(100vh-100px)] ">
       <Particle colorTheme={colorTheme} />

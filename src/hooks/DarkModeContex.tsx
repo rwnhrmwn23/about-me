@@ -1,3 +1,5 @@
+"use client";
+
 import React, { createContext, useContext, ReactNode } from "react";
 import useDarkMode from "./useDarkTheme";
 
@@ -10,8 +12,14 @@ const DarkModeContext = createContext<DarkModeContextType | undefined>(
   undefined
 );
 
-export const DarkModeProvider = ({ children }: { children: ReactNode }) => {
-  const [colorTheme, setTheme]: any = useDarkMode();
+export const DarkModeProvider = ({
+  initialTheme = "dark",
+  children,
+}: {
+  initialTheme?: string;
+  children: ReactNode;
+}) => {
+  const [colorTheme, setTheme]: any = useDarkMode(initialTheme);
 
   return (
     <DarkModeContext.Provider value={{ colorTheme, setTheme }}>

@@ -1,4 +1,5 @@
-import Link from "next/link";
+"use client";
+
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
@@ -54,7 +55,7 @@ const WorkDetail = ({ id }: { id: string }) => {
 
           <Grid item xs={12}>
             <AnimateComponent>
-              <div className="h-[8px] w-[200px] dark:bg-base-light bg-base-dark" />
+              <div className="h-[4px] w-[200px] dark:bg-base-light bg-base-dark" />
             </AnimateComponent>
           </Grid>
         </Grid>
@@ -134,13 +135,6 @@ const WorkDetail = ({ id }: { id: string }) => {
               <AnimateComponent>
                 <p className="typography-desc dark:text-base-light text-base-dark font-bold">
                   Tech Stack
-                </p>
-              </AnimateComponent>
-            </Grid>
-            <Grid item>
-              <AnimateComponent>
-                <p className="typography-desc dark:text-base-light text-base-dark font-bold">
-                  :
                 </p>
               </AnimateComponent>
             </Grid>

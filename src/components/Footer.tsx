@@ -1,3 +1,5 @@
+import { useDarkModeContext } from "@/hooks/DarkModeContex";
+
 import Image from "next/image";
 import linkedindark from "../../public/social-media/linkedin-dark.svg";
 import linkedinlight from "../../public/social-media/linkedin-light.svg";
@@ -6,7 +8,9 @@ import emaillight from "../../public/social-media/email-light.svg";
 
 import { Grid } from "@mui/material";
 
-const Footer = ({ colorTheme }: { colorTheme: string }) => {
+const Footer = () => {
+  const { colorTheme } = useDarkModeContext();
+
   return (
     <div className="flex px-[16px] lg:px-[60px] py-[40px]">
       <Grid container alignItems="center" spacing="20px">

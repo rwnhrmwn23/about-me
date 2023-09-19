@@ -7,23 +7,35 @@ import About from "@/components/About";
 import Tools from "@/components/Tools";
 import Work from "@/components/Work";
 import Footer from "@/components/Footer";
-import { useDarkModeContext } from "@/hooks/DarkModeContex";
+import { DarkModeProvider } from "@/hooks/DarkModeContex";
 
-export default function Home() {
-  const { colorTheme, setTheme } = useDarkModeContext();
-
+function Content() {
   return (
     <div
       id="home"
       className="flex flex-col gap-[40px] dark:bg-base-dark bg-base-light"
     >
-      <Navigation colorTheme={colorTheme} />
-      <Hero colorTheme={colorTheme} />
+      <Navigation />
+      <Hero />
       <About />
       <Tools />
       <Work />
-      <Footer colorTheme={colorTheme} />
-      <ToogleDarkmode colorTheme={colorTheme} setTheme={setTheme} />
+      <Footer />
+      <ToogleDarkmode />
     </div>
+  );
+}
+
+export default function Home() {
+  let initialTheme;
+
+  if (typeof window !== "undefined") {
+    initialTheme = localStorage.getItem("theme") || "dark";
+  }
+
+  return (
+    <DarkModeProvider initialTheme={initialTheme || "dark"}>
+      <Content />
+    </DarkModeProvider>
   );
 }

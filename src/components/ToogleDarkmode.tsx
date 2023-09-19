@@ -1,10 +1,10 @@
-const ToogleDarkmode = ({
-  colorTheme,
-  setTheme,
-}: {
-  colorTheme: string;
-  setTheme: (e: string) => void;
-}) => {
+"use client";
+
+import { useDarkModeContext } from "@/hooks/DarkModeContex";
+
+const ToogleDarkmode = () => {
+  const { colorTheme, setTheme }: any = useDarkModeContext();
+
   return (
     <div className="sticky flex justify-end bottom-[40px] mr-[30px] z-10 cursor-pointer">
       {colorTheme === "light" ? (

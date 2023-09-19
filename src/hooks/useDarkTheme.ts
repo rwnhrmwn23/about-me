@@ -2,8 +2,8 @@
 
 import { useEffect, useState } from "react";
 
-function useDarkMode() {
-  const [theme, setTheme] = useState("dark");
+function useDarkMode(initialTheme = "dark") {
+  const [theme, setTheme] = useState(initialTheme);
   const colorTheme = theme === "dark" ? "light" : "dark";
 
   useEffect(() => {

@@ -1,3 +1,5 @@
+"use client";
+
 import Grid from "@mui/material/Grid";
 import WrapperSection from "./WrapperSection";
 import Image from "next/image";
@@ -5,7 +7,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { work } from "./utils/work";
-
 import { motion } from "framer-motion";
 
 const Work = () => {
