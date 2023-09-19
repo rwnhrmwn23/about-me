@@ -13,7 +13,10 @@ export default function Home() {
   const { colorTheme, setTheme } = useDarkModeContext();
 
   return (
-    <div className="flex flex-col gap-[40px] dark:bg-base-dark bg-base-light">
+    <div
+      id="home"
+      className="flex flex-col gap-[40px] dark:bg-base-dark bg-base-light"
+    >
       <Navigation colorTheme={colorTheme} />
       <Hero colorTheme={colorTheme} />
       <About />

@@ -6,6 +6,8 @@ import Link from "next/link";
 
 import { work } from "./utils/work";
 
+import { motion } from "framer-motion";
+
 const Work = () => {
   return (
     <WrapperSection id="work">
@@ -37,15 +39,25 @@ const Work = () => {
               alignItems="start"
             >
               <Grid item xs={12}>
-                <Image
-                  style={{
-                    width: "100%",
-                    height: "auto",
+                <motion.div
+                  exit={{ opacity: 0 }}
+                  initial={{ opacity: 0 }}
+                  transition={{
+                    duration: 1,
                   }}
-                  className="rounded-[8px]"
-                  alt={data?.title}
-                  src={data?.img}
-                />
+                  animate={{ opacity: 1 }}
+                >
+                  <Image
+                    style={{
+                      width: "100%",
+                      height: "auto",
+                    }}
+                    className="rounded-[8px]"
+                    alt={data?.title}
+                    src={data?.img}
+                    loading="lazy"
+                  />
+                </motion.div>
               </Grid>
               <Grid item container xs={12} spacing="16px" alignItems="start">
                 <Grid item xs={12}>
