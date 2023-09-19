@@ -78,24 +78,26 @@ const WorkDetail = ({ id }: { id: string }) => {
             </Grid>
           </Grid>
 
-          <Grid item>
-            <Link href={`/work/${data?.id}`}>
-              <AnimateComponent>
-                <div className="flex flex-row items-center py-[4px] pl-[8px] pr-[6px] rounded-[5px] border border-solid dark:border-base-light-active border-base-dark-active cursor-pointer dark:hover:bg-[#ffffff1a] hover:bg-base-light-hover">
-                  <p className="typography-desc dark:text-grey-light-active text-base-dark-light">
-                    Visit Website
-                  </p>
-                  <Image
-                    style={{
-                      height: "18px",
-                    }}
-                    alt="website-link"
-                    src={colorTheme == "light" ? paperlight : paperdark}
-                  />
-                </div>
-              </AnimateComponent>
-            </Link>
-          </Grid>
+          {data?.onClick && (
+            <Grid item>
+              <div onClick={data?.onClick}>
+                <AnimateComponent>
+                  <div className="flex flex-row items-center py-[4px] pl-[8px] pr-[6px] rounded-[5px] border border-solid dark:border-base-light-active border-base-dark-active cursor-pointer dark:hover:bg-[#ffffff1a] hover:bg-base-light-hover">
+                    <p className="typography-desc dark:text-grey-light-active text-base-dark-light">
+                      Visit Website
+                    </p>
+                    <Image
+                      style={{
+                        height: "18px",
+                      }}
+                      alt="website-link"
+                      src={colorTheme == "light" ? paperlight : paperdark}
+                    />
+                  </div>
+                </AnimateComponent>
+              </div>
+            </Grid>
+          )}
         </Grid>
 
         <Grid item xs={12}>
