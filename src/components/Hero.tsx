@@ -17,10 +17,10 @@ const Hero = ({ colorTheme }: { colorTheme: string }) => {
       <div className="absolute flex flex-col  items-center z-2 max-w-[1140px] mb:px-[16px] lg:px-[60px] ">
         <div className="flex flex-col items-start mb:gap-[20px] lg:gap-[40px]">
           <div>
-            <p className="mt-[-150px] typography-hello-mobile lg:hidden dark:text-base-light text-base-dark">
+            <p className="mt-[-100px] typography-hello-mobile lg:hidden dark:text-base-light text-base-dark">
               Hary Arrahman, Frontend Web Developer
             </p>
-            <p className="mt-[-150px] typography-hello mb:hidden lg:block dark:text-base-light text-base-dark">
+            <p className="mt-[-100px] typography-hello mb:hidden lg:block dark:text-base-light text-base-dark">
               Hary Arrahman, Frontend Web Developer
             </p>
           </div>
