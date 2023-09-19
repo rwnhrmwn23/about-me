@@ -3,14 +3,28 @@ import MobileView from "./navigation/MobileView";
 
 const navigation = ["home", "about", "tools", "work"];
 
-const Navigation = ({ colorTheme }: { colorTheme: string }) => {
+const Navigation = ({
+  colorTheme,
+  withLink = false,
+}: {
+  colorTheme: string;
+  withLink?: boolean;
+}) => {
   return (
     <>
       {/* Desktop */}
-      <DesktopView colorTheme={colorTheme} navigation={navigation} />
+      <DesktopView
+        colorTheme={colorTheme}
+        navigation={navigation}
+        withLink={withLink}
+      />
 
       {/* Mobile */}
-      <MobileView colorTheme={colorTheme} navigation={navigation} />
+      <MobileView
+        colorTheme={colorTheme}
+        navigation={navigation}
+        withLink={withLink}
+      />
     </>
   );
 };

@@ -11,7 +11,7 @@ const WorkDetails = ({ params }: { params: { id: string } }) => {
 
   return (
     <div className="flex flex-col dark:bg-base-dark bg-base-light">
-      <Navigation colorTheme={colorTheme} />
+      <Navigation colorTheme={colorTheme} withLink={true} />
       <WorkDetail id={params.id} />
       <ToogleDarkmode colorTheme={colorTheme} setTheme={setTheme} />
     </div>

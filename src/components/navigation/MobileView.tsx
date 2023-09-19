@@ -12,19 +12,23 @@ import ScrollLink from "../ScrollLink";
 const MobileView = ({
   colorTheme,
   navigation,
+  withLink,
 }: {
   colorTheme: string;
   navigation: string[];
+  withLink?: boolean;
 }) => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const LinkComponent = withLink ? Link : ScrollLink;
   return (
     <>
       <div className="sticky top-0 h-[100px] px-[30px] py-[42px] items-center justify-between dark:bg-base-dark bg-base-light z-10 mb:flex sm:flex md:flex lg:hidden xl:hidden">
-        <ScrollLink href="/#home">
+        <LinkComponent href="/#home">
           <div className="cursor-pointer">
             <Logo colorTheme={colorTheme} />
           </div>
-        </ScrollLink>
+        </LinkComponent>
         <div
           className="w-[30px] h-[30px] cursor-pointer"
           onClick={() => setIsOpen(!isOpen)}
@@ -49,11 +53,11 @@ const MobileView = ({
         >
           <div className="w-screen h-screen flex flex-col items-end px-[30px] py-[42px]">
             <div className="w-full flex justify-between items-center mb-[40px]">
-              <ScrollLink href="/#home">
+              <LinkComponent href="/#home">
                 <div className="cursor-pointer">
                   <Logo colorTheme={colorTheme} />
                 </div>
-              </ScrollLink>
+              </LinkComponent>
 
               <div
                 className="w-[30px] h-[30px] cursor-pointer"
@@ -66,7 +70,7 @@ const MobileView = ({
             <div className="w-full">
               {navigation?.map((nav, idx) => {
                 return (
-                  <ScrollLink
+                  <LinkComponent
                     key={idx}
                     href={`/#${nav}`}
                     onClick={() => setIsOpen(!isOpen)}
@@ -76,7 +80,7 @@ const MobileView = ({
                         {nav}
                       </p>
                     </div>
-                  </ScrollLink>
+                  </LinkComponent>
                 );
               })}
 
