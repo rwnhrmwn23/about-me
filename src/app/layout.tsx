@@ -4,6 +4,7 @@ import Head from "next/head";
 import "./globals.scss";
 import { Poppins } from "next/font/google";
 import logodark from "../../public/logo-dark.svg";
+import { DarkModeProvider } from "@/hooks/DarkModeContex";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -44,7 +45,9 @@ export default function RootLayout({
         <meta name="twitter:card" content={logodark} />
       </Head>
 
-      <body className={poppins.className}>{children}</body>
+      <body className={poppins.className}>
+        <DarkModeProvider>{children}</DarkModeProvider>
+      </body>
     </html>
   );
 }

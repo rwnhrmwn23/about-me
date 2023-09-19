@@ -48,7 +48,7 @@ const MobileView = ({
         >
           <div className="w-screen h-screen flex flex-col items-end px-[30px] py-[42px]">
             <div className="w-full flex justify-between items-center mb-[40px]">
-              <Link href="#">
+              <Link href="/#home">
                 <div className="cursor-pointer">
                   <Logo colorTheme={colorTheme} />
                 </div>
@@ -65,7 +65,7 @@ const MobileView = ({
               {navigation?.map((nav, idx) => {
                 return (
                   <div key={idx} className="flex items-center h-[80px]">
-                    <Link href={`#${nav}`} onClick={() => setIsOpen(!isOpen)}>
+                    <Link href={`/#${nav}`} onClick={() => setIsOpen(!isOpen)}>
                       <p className="cursor-pointer typography-section-title dark:hover:text-base-light dark:text-base-light-active text-base-dark-active hover:text-base-light-active">
                         {nav}
                       </p>
