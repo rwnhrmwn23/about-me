@@ -34,7 +34,7 @@ const WorkDetail = ({ id }: { id: string }) => {
                 }}
                 className="rounded-[8px]"
                 alt={data?.title || ""}
-                src={data?.img}
+                src={data?.img || ""}
                 loading="lazy"
               />
             </AnimateComponent>
