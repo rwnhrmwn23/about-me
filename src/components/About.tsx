@@ -4,67 +4,63 @@ import WrapperSection from "./WrapperSection";
 
 const About = () => {
   return (
-    <WrapperSection id="about">
+    <WrapperSection id="About">
       <div className="h-[8px] w-[200px] dark:bg-base-light bg-base-dark" />
       <Grid container spacing="40px">
         <Grid item lg={6} md={12} xs={12}>
           <p className="typography-title-mobile lg:hidden dark:text-base-light text-base-dark">
-            I love to researching and analyzing about frontend technology.
+            I’m a mobile developer who loves creating apps and eager adopt new technologies.
           </p>
           <p className="typography-title mb:hidden lg:block dark:text-base-light text-base-dark">
-            I love to researching and analyzing about frontend technology.
+            I’m a mobile developer who loves creating apps and eager adopt new technologies.
           </p>
         </Grid>
         <Grid item lg={6} md={12} xs={12}>
           <p className="typography-desc dark:text-grey-dark text-grey-dark-active">
+
             <a className="dark:text-base-light text-base-dark font-medium">
-              {`I'm a Software Engineer with 2+ years of experience, specializing
-              in frontend technologies.`}
-            </a>{" "}
-            {`I'm based in Jakarta and have a strong interest in exploring new
-            frontend`}{" "}
+              {`I'm Android Developer with 5+ years of hands-on experience 
+              in designing, implementing, testing, and maintaining 
+              cutting-edge mobile applications.`}
+            </a>
+
+            <br/>
+            <br/>
+
+            {`Eager to embrace emerging technologies and always ready 
+            to learn new things in the ever-evolving mobile app development landscape. 
+            Adept at collaborating with cross-functional teams to drive project success. 
+            Proven track record in delivering quality applications that are result-oriented 
+            and exceed expectations.`}
+
+            <br/>
+            <br/>
+
             <a
-              href="#tools"
-              className="dark:text-base-light text-base-dark font-medium"
+                href="#Tools"
+                className="dark:text-base-light text-base-dark font-medium"
             >
-              Tech Stack
+              My Stack
             </a>{" "}
-            like React JS, Next JS, Typescript, Javascript, Vue JS, and Nuxt JS.
-            I often dedicate hours each day to create mini-projects for testing
-            the efficiency of these technologies.
-            <br />
-            <br />
+
+            includes Kotlin, Jetpack Compose, Android Jetpack, Firebase, Google Maps API, and more.
+            I dedicate time daily to exploring new tools and currently diving into Kotlin Compose Multiplatform
+            and Flutter to create cross-platform apps for Android and iOS.
+
+            <br/>
+            <br/>
             You can check out some of{" "}
             <a
-              href="#work"
-              className="dark:text-base-light text-base-dark font-medium"
+                href="#Work"
+                className="dark:text-base-light text-base-dark font-medium"
             >
               My Work
             </a>{" "}
-            {`below. I'm passionate about research, analysis, refactoring, and
-            ensuring code scalability and quality. I take immense pride in my
-            work and have a deep love for the code I create.`}
-            <br />
-            <br />{" "}
-            <a className="dark:text-base-light text-base-dark font-medium">
-              My primary focus is on building highly scalable web applications.
-            </a>{" "}
-            I begin by creating a well-defined Design System in Figma and
-            seamlessly integrate it into the codebase, always prioritizing
-            performance optimization.
-            <br />
-            <br />I thoroughly enjoy crafting various helper codes to assist my
-            team and streamline our development efforts. If you have any
-            questions or would like to discuss these topics, please feel free to
-            reach out to me on{" "}
-            <a
-              href="https://www.linkedin.com/in/hary-arrahman"
-              target="_blank"
-              className="dark:text-base-light text-base-dark font-medium"
-            >
-              LinkedIn.
-            </a>{" "}
-            {`I'd be happy to answer them.`}
+
+            {`below. I'm driven by a passion for slicing ui design, research, analysis, and refactoring,
+             with always focused on delivering scalable and high-quality code. I take great pride in my work and 
+             have a deep appreciation for the code I craft.`}
+
           </p>
         </Grid>
       </Grid>

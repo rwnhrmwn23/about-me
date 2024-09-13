@@ -113,22 +113,6 @@ const WorkDetail = ({ id }: { id: string }) => {
         </Grid>
 
         <Grid item container xs={12} spacing="10px">
-          <Grid item container xs={12}>
-            <Grid item lg={1.5} md={1.5} xs={3.5}>
-              <AnimateComponent>
-                <p className="typography-desc dark:text-base-light text-base-dark font-bold">
-                  Timeline
-                </p>
-              </AnimateComponent>
-            </Grid>
-            <Grid item>
-              <AnimateComponent>
-                <p className="typography-desc dark:text-base-light text-base-dark font-bold">
-                  : {data?.timeline}
-                </p>
-              </AnimateComponent>
-            </Grid>
-          </Grid>
 
           <Grid item container xs={12}>
             <Grid item lg={1.5} md={1.5} xs={3.5}>

@@ -12,7 +12,7 @@ import { DarkModeProvider } from "@/hooks/DarkModeContex";
 function Content() {
   return (
     <div
-      id="home"
+      id="Home"
       className="flex flex-col gap-[40px] dark:bg-base-dark bg-base-light"
     >
       <Navigation />

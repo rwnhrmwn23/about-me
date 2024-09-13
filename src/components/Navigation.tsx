@@ -4,7 +4,7 @@ import { useDarkModeContext } from "@/hooks/DarkModeContex";
 import DesktopView from "./navigation/DesktopView";
 import MobileView from "./navigation/MobileView";
 
-const navigation = ["home", "about", "tools", "work"];
+const navigation = ["Home", "About", "Tools", "Work"];
 
 const Navigation = ({ withLink = false }: { withLink?: boolean }) => {
   const { colorTheme } = useDarkModeContext();

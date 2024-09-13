@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 
 const Work = () => {
   return (
-    <WrapperSection id="work">
+    <WrapperSection id="Work">
       <div className="flex flex-col gap-[20px] mt-[20px]">
         <p className="typography-title-mobile lg:hidden dark:text-base-light text-base-dark">
           Work

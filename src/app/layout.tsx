@@ -10,9 +10,9 @@ const poppins = Poppins({
   display: "swap",
 });
 
-const title = "Hary Arrahman | Software Engineer";
+const title = "Irwan Hermawan | Mobile Developer";
 const description =
-  "Hary Arrahman is a passionate software engineer specializing in Next Js, React Js, React, Vue Js, Nuxt Js and TypeScript based in Jakarta, Indonesia. Hire Hary for Web app development";
+  "Irwan Hermawan is a passionate Mobile Developer specializing in Android Kotlin and Multiplatform using KMP or Flutter. Based in Jakarta, Indonesia. Hire Irwan for Mobile App Development";
 const url = "https://haryarrahman.vercel.app/";
 
 export const metadata = {
