@@ -101,21 +101,6 @@ const Hero = () => {
               </Grid>
 
           </Grid>
-
-          <ScrollLink href="#Work">
-            <div className="flex flex-row py-[12px] pl-[18px] pr-[12px] rounded-[5px] border border-solid dark:border-base-light-active border-base-dark-active cursor-pointer dark:hover:bg-[#ffffff1a] hover:bg-base-light-hover">
-              <p className="typography-title !text-[18px] !leading-[18px] dark:text-base-light-active text-base-dark-active">
-                View Work
-              </p>
-              <Image
-                style={{
-                  height: "18px",
-                }}
-                alt="linkedin"
-                src={colorTheme == "light" ? paperlight : paperdark}
-              />
-            </div>
-          </ScrollLink>
         </div>
       </div>
     </div>

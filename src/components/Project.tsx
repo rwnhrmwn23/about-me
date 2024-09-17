@@ -6,18 +6,18 @@ import Image from "next/image";
 
 import Link from "next/link";
 
-import { work } from "./utils/work";
+import { projects } from "./utils/projects";
 import { motion } from "framer-motion";
 
-const Work = () => {
+const Project = () => {
   return (
-    <WrapperSection id="Work">
+    <WrapperSection id="Project">
       <div className="flex flex-col gap-[20px] mt-[20px]">
         <p className="typography-title-mobile lg:hidden dark:text-base-light text-base-dark">
-          Work
+          Project
         </p>
         <p className="typography-title mb:hidden lg:block dark:text-base-light text-base-dark">
-          Work
+            Project
         </p>
         <div className="flex flex-row gap-[4px]">
           <div className="h-[4px] w-[130px] dark:bg-base-light bg-base-dark" />
@@ -28,7 +28,7 @@ const Work = () => {
       </div>
 
       <Grid container alignItems="flex-start" spacing="80px">
-        {work?.map((data, idx) => {
+        {projects?.map((data, idx) => {
           return (
             <Grid
               key={idx}
@@ -67,21 +67,14 @@ const Work = () => {
                   </p>
                 </Grid>
                 <Grid item xs={12}>
-                  <p className="typography-desc dark:text-grey-light-active text-base-dark-light"
-                     style={{
-                         display: '-webkit-box',
-                         WebkitBoxOrient: 'vertical',
-                         overflow: 'hidden',
-                         WebkitLineClamp: 2,
-                         textOverflow: 'ellipsis',
-                     }}>
+                  <p className="typography-desc dark:text-grey-light-active text-base-dark-light">
                     {data?.desc}
                   </p>
                 </Grid>
 
                 {data?.id && (
                   <Grid item>
-                    <Link href={`/work/${data?.id}`}>
+                    <Link href={`/project/${data?.id}`}>
                       <div className="flex flex-row py-[8px] pl-[18px] pr-[12px] rounded-[5px] border border-solid dark:border-base-light-active border-base-dark-active cursor-pointer dark:hover:bg-[#ffffff1a] hover:bg-base-light-hover">
                         <p className="typography-desc dark:text-grey-light-active text-base-dark-light">{`See Details   >`}</p>
                       </div>
@@ -97,4 +90,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default Project;

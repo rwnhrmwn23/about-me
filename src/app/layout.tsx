@@ -1,9 +1,9 @@
 import Head from "next/head";
 import "./globals.scss";
 import logodark from "../../public/logo-dark.svg";
-import { Poppins } from "next/font/google";
+import {Montserrat, Poppins} from "next/font/google";
 
-const poppins = Poppins({
+const poppins = Montserrat({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   style: ["normal", "italic"],
   subsets: ["latin"],

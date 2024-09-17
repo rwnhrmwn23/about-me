@@ -2,10 +2,10 @@
 
 import Navigation from "@/components/Navigation";
 import ToogleDarkmode from "@/components/ToogleDarkmode";
-import WorkDetail from "@/components/WorkDetail";
+import ProjectDetail from "@/components/ProjectDetail";
 import { DarkModeProvider } from "@/hooks/DarkModeContex";
 
-const WorkDetails = ({ params }: { params: { id: string } }) => {
+const ProjectDetails = ({ params }: { params: { id: string } }) => {
   let initialTheme;
 
   if (typeof window !== "undefined") {
@@ -16,11 +16,11 @@ const WorkDetails = ({ params }: { params: { id: string } }) => {
     <DarkModeProvider initialTheme={initialTheme}>
       <div className="flex flex-col dark:bg-base-dark bg-base-light">
         <Navigation withLink={true} />
-        <WorkDetail id={params.id} />
+        <ProjectDetail id={params.id} />
         <ToogleDarkmode />
       </div>
     </DarkModeProvider>
   );
 };
 
-export default WorkDetails;
+export default ProjectDetails;

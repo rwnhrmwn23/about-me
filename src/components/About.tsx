@@ -49,7 +49,7 @@ const About = () => {
             <br/>
             You can check out some of{" "}
 
-            <ScrollLink href="#Work" className="dark:text-base-light text-base-dark font-medium">
+            <ScrollLink href="#Project" className="dark:text-base-light text-base-dark font-medium">
               My Works
             </ScrollLink>
            {" "}

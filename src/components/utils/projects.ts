@@ -1,6 +1,6 @@
-import myih from "../../../public/work/myih.png";
+import myih from "../../../public/project/myih.png";
 
-export const work = [
+export const projects = [
   {
     id: "myindihome",
     title: "MyIndihome",

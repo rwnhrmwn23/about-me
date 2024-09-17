@@ -5,9 +5,9 @@ import Navigation from "@/components/Navigation";
 import ToogleDarkmode from "@/components/ToogleDarkmode";
 import About from "@/components/About";
 import Tools from "@/components/Tools";
-import Work from "@/components/Work";
 import Footer from "@/components/Footer";
 import { DarkModeProvider } from "@/hooks/DarkModeContex";
+import Project from "@/components/Project";
 
 function Content() {
   return (
@@ -19,7 +19,7 @@ function Content() {
       <Hero />
       <About />
       <Tools />
-      <Work />
+      <Project />
       <Footer />
       <ToogleDarkmode />
     </div>

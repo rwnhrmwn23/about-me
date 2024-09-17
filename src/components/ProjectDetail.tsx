@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 import { Grid } from "@mui/material";
-import { work } from "./utils/work";
+import { projects } from "./utils/projects";
 import { useDarkModeContext } from "@/hooks/DarkModeContex";
 
 import WrapperSection from "./WrapperSection";
@@ -13,11 +13,11 @@ import paperdark from "../../public/social-media/paper-dark.svg";
 import paperlight from "../../public/social-media/paper-light.svg";
 import AnimateComponent from "./AnimateComponent";
 
-const WorkDetail = ({ id }: { id: string }) => {
+const ProjectDetail = ({ id }: { id: string }) => {
   const router = useRouter();
 
-  const data = work?.find((e) => e?.id == id);
-  const dataIdx = work?.findIndex((e) => e?.id == id);
+  const data = projects?.find((e) => e?.id == id);
+  const dataIdx = projects?.findIndex((e) => e?.id == id);
 
   const { colorTheme } = useDarkModeContext();
 
@@ -174,18 +174,18 @@ const WorkDetail = ({ id }: { id: string }) => {
                 <div
                     className="h-full flex flex-col py-[12px] pl-[18px] pr-[12px] rounded-[5px] border border-solid dark:border-base-light-active border-base-dark-active dark:hover:bg-[#ffffff1a] hover:bg-base-light-hover cursor-pointer"
                     onClick={() =>
-                        work[dataIdx - 1]?.id
-                            ? router.push(`/work/${work[dataIdx - 1]?.id}`)
-                            : router.push(`/work/${work[work?.length - 1]?.id}`)
+                        projects[dataIdx - 1]?.id
+                            ? router.push(`/project/${projects[dataIdx - 1]?.id}`)
+                            : router.push(`/project/${projects[projects?.length - 1]?.id}`)
                     }
                 >
                   <p className="typography-desc dark:text-grey-light-active text-base-dark-light text-right">
                     {"<"} Previous
                   </p>
                   <p className="typography-desc dark:text-grey-light-active text-base-dark-light text-right">
-                    {work[dataIdx - 1]?.title
-                        ? work[dataIdx - 1]?.title
-                        : work[work?.length - 1]?.title}
+                    {projects[dataIdx - 1]?.title
+                        ? projects[dataIdx - 1]?.title
+                        : projects[projects?.length - 1]?.title}
                   </p>
                 </div>
               </Grid>
@@ -194,18 +194,18 @@ const WorkDetail = ({ id }: { id: string }) => {
                 <div
                     className="h-full flex flex-col py-[12px] pl-[18px] pr-[12px] rounded-[5px] border border-solid dark:border-base-light-active border-base-dark-active dark:hover:bg-[#ffffff1a] hover:bg-base-light-hover cursor-pointer"
                     onClick={() =>
-                        work[dataIdx + 1]?.id
-                            ? router.push(`/work/${work[dataIdx + 1]?.id}`)
-                            : router.push(`/work/${work[0]?.id}`)
+                        projects[dataIdx + 1]?.id
+                            ? router.push(`/project/${projects[dataIdx + 1]?.id}`)
+                            : router.push(`/project/${projects[0]?.id}`)
                     }
                 >
                   <p className="typography-desc dark:text-grey-light-active text-base-dark-light">
                     Next {">"}
                   </p>
                   <p className="typography-desc dark:text-grey-light-active text-base-dark-light ">
-                    {work[dataIdx + 1]?.title
-                        ? work[dataIdx + 1]?.title
-                        : work[0]?.title}
+                    {projects[dataIdx + 1]?.title
+                        ? projects[dataIdx + 1]?.title
+                        : projects[0]?.title}
                   </p>
                 </div>
               </Grid>
@@ -216,4 +216,4 @@ const WorkDetail = ({ id }: { id: string }) => {
   );
 };
 
-export default WorkDetail;
+export default ProjectDetail;

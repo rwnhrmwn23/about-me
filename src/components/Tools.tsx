@@ -1,61 +1,41 @@
 import Grid from "@mui/material/Grid";
-import WrapperSection from "./WrapperSection";
-import Image from "next/image";
-
-import android from "../../public/tools/android.png";
-import kotlin from "../../public/tools/kotlin.png";
-import compose from "../../public/tools/compose.png";
-import jetpack from "../../public/tools/jetpack.png";
-import firebase from "../../public/tools/firebase.png";
-import google from "../../public/tools/google.png";
-import others from "../../public/tools/others.png";
-
-const tools = [
-    {
-        title: "Android",
-        desc: "An open-source operating system created by Google. " +
-            "to build feature-rich and high-performance applications. ",
-        src: android,
-    },
-    {
-        title: "Kotlin",
-        desc: "A modern, expressive, and powerful programming language that has become " +
-            "the preferred choice for Android development.",
-        src: kotlin,
-    },
-    {
-        title: "Google APIs",
-        desc: "Provide a wide range of services and tools to integrate into Android apps " +
-            "to enhance functionality, user experience, and performance.",
-        src: google,
-    },
-    {
-        title: "Android Jetpack",
-        desc: "Suite of libraries which simplify complex tasks and help maintain clean architecture. " +
-            "It includes components like Navigation, LiveData, ViewModel, Paging, Room, and more.",
-        src: jetpack,
-    },
-    {
-        title: "Firebase",
-        desc: "A comprehensive platform that offers a variety of tools and services " +
-            "to help build, improve, and grow mobile applications.",
-        src: firebase,
-    },
-    {
-        title: "Jetpack Compose",
-        desc: "modern toolkit for building native UI declaratively with less boilerplate code, faster, " +
-            "and more efficient to design app UIs.",
-        src: compose,
-    },
-    {
-        title: "Others",
-        desc: "Some tools that I have used and am familiar with in developing mobile applications such as Clean Architecture, MVVM, " +
-            "Retrofit, Ktor, Moshi, OKHttp, Glide, Koin, Dagger, Hilt, Coroutine, Flow, Leakcanary, Proguard, JUnit, Mockito, and more.",
-        src: others,
-    },
-];
+import WrapperSection from "@/components/WrapperSection";
+import {
+    SiAndroidstudio,
+    SiFastlane,
+    SiFirebase,
+    SiFlutter,
+    SiJetpackcompose,
+    SiJunit5,
+    SiKotlin,
+    SiKtor
+} from "react-icons/si";
+import {FaAndroid, FaGit, FaGoogle, FaJava, FaJira, FaSyncAlt} from "react-icons/fa";
+import {GiBroadDagger, GiDaggers, GiDiamondHilt, GiJetpack, GiSwordHilt} from "react-icons/gi";
+import {TbPacman} from "react-icons/tb";
 
 const Tools = () => {
+    const technologies = [
+        {name: 'Kotlin', icon: <SiKotlin/>},
+        {name: 'Java', icon: <FaJava/>},
+        {name: 'Flutter', icon: <SiFlutter/>},
+        {name: 'Android', icon: <FaAndroid/>},
+        {name: 'Android Studio', icon: <SiAndroidstudio/>},
+        {name: 'Android Jetpack', icon: <GiJetpack/>},
+        {name: 'Jetpack Compose', icon: <SiJetpackcompose/>},
+        {name: 'Google APIs', icon: <FaGoogle/>},
+        {name: 'Firebase', icon: <SiFirebase/>},
+        {name: 'Fastlane', icon: <SiFastlane/>},
+        {name: 'Ktor', icon: <SiKtor/>},
+        {name: 'Koin', icon: <TbPacman/>},
+        {name: 'Dagger', icon: <GiBroadDagger/>},
+        {name: 'Hilt', icon: <GiSwordHilt/>},
+        {name: 'Coroutine Flow', icon: <FaSyncAlt/>},
+        {name: 'JUnit', icon: <SiJunit5/>},
+        {name: 'Jira', icon: <FaJira/>},
+        {name: 'Git', icon: <FaGit/>},
+    ];
+
     return (
         <WrapperSection id="Tools">
             <div className="flex flex-col gap-[20px] mt-[20px]">
@@ -71,33 +51,29 @@ const Tools = () => {
                     <div className="h-[4px] w-[4px] dark:bg-base-light bg-base-dark"/>
                     <div className="h-[4px] w-[4px] dark:bg-base-light bg-base-dark"/>
                 </div>
+                <Grid justifyContent="center">
+                    <div className="technologies-section p-8">
+                        <div
+                            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 dark:text-base-light text-base-dark justify-items-center">
+                            {technologies.map((tech, index) => (
+                                <div
+                                    key={index}
+                                    className="flex flex-col items-center">
+                                    {/* Responsive icon size */}
+                                    <span className="text-xl sm:text-3xl md:text-4xl">{tech.icon}</span>
+
+                                    {/* Responsive text size */}
+                                    <span
+                                        className="text-sm sm:text-base md:text-sm text-center mt-4">{tech.name}</span>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </Grid>
+
             </div>
 
-            <Grid container spacing="40px">
-                {tools?.map((e, idx) => {
-                    return (
-                        <Grid key={idx} item lg={6} md={12}>
-                            <div className="flex flex-row items-center gap-[20px]">
-                                <Image
-                                    height={120}
-                                    width={120}
-                                    alt={e?.title}
-                                    src={e?.src}
-                                    className="rounded-[8px]"
-                                />
-                                <div className="flex flex-col gap-[8px] ">
-                                    <p className="typography-title !text-[30px] !leading-[30px] dark:text-base-light text-base-dark">
-                                        {e?.title}
-                                    </p>
-                                    <p className="typography-desc dark:text-grey-light-active text-base-dark-light">
-                                        {e?.desc}
-                                    </p>
-                                </div>
-                            </div>
-                        </Grid>
-                    );
-                })}
-            </Grid>
+
         </WrapperSection>
     );
 };
