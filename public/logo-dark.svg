@@ -1,4 +1,4 @@
-<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="150" cy="150" r="150" fill="black" />
-    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Arial" font-size="144" fill="white">IH</text>
+<svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="150" cy="150" r="150" fill="#141414"/>
+<path d="M101.42 95.9091V205H88.2102V95.9091H101.42ZM127.907 205V95.9091H141.118V144.489H199.285V95.9091H212.496V205H199.285V156.207H141.118V205H127.907Z" fill="white"/>
 </svg>

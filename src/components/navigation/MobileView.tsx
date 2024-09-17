@@ -26,7 +26,7 @@ const MobileView = ({
   return (
     <>
       <div className="sticky top-0 h-[100px] px-[30px] py-[42px] items-center justify-between dark:bg-base-dark bg-base-light z-10 mb:flex sm:flex md:flex lg:hidden xl:hidden">
-        <LinkComponent href="/#home">
+        <LinkComponent href="#Home">
           <div className="cursor-pointer">
             <Logo colorTheme={colorTheme} />
           </div>
@@ -55,7 +55,7 @@ const MobileView = ({
         >
           <div className="w-screen h-screen flex flex-col items-end px-[30px] py-[42px]">
             <div className="w-full flex justify-between items-center mb-[40px]">
-              <LinkComponent href="/#home">
+              <LinkComponent href="#Home">
                 <div className="cursor-pointer">
                   <Logo colorTheme={colorTheme} />
                 </div>

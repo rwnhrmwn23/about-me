@@ -13,7 +13,7 @@ import others from "../../public/tools/others.png";
 const tools = [
     {
         title: "Android",
-        desc: "An open-source operating system created by Google. It provides a robust platform for developers " +
+        desc: "An open-source operating system created by Google. " +
             "to build feature-rich and high-performance applications. ",
         src: android,
     },
@@ -25,31 +25,31 @@ const tools = [
     },
     {
         title: "Google APIs",
-        desc: "Provide a wide range of services and tools to integrate into your Android apps " +
+        desc: "Provide a wide range of services and tools to integrate into Android apps " +
             "to enhance functionality, user experience, and performance.",
         src: google,
     },
     {
         title: "Android Jetpack",
-        desc: "Suite of libraries helps developers which simplify complex tasks and help maintain clean architecture. " +
-            "It includes components like Navigation, LiveData, ViewModel, Paging Room, and more",
+        desc: "Suite of libraries which simplify complex tasks and help maintain clean architecture. " +
+            "It includes components like Navigation, LiveData, ViewModel, Paging, Room, and more.",
         src: jetpack,
     },
     {
         title: "Firebase",
-        desc: "A comprehensive platform provided by Google that offers a variety of tools and services" +
+        desc: "A comprehensive platform that offers a variety of tools and services " +
             "to help build, improve, and grow mobile applications.",
         src: firebase,
     },
     {
         title: "Jetpack Compose",
-        desc: "modern toolkit for building native UI declaratively allows with less boilerplate code, faster, " +
-            " and more efficient to design app UIs.",
+        desc: "modern toolkit for building native UI declaratively with less boilerplate code, faster, " +
+            "and more efficient to design app UIs.",
         src: compose,
     },
     {
         title: "Others",
-        desc: "Some tools that I have used and am familiar with in developing mobile applications such as Clean Architecture, MVVM" +
+        desc: "Some tools that I have used and am familiar with in developing mobile applications such as Clean Architecture, MVVM, " +
             "Retrofit, Ktor, Moshi, OKHttp, Glide, Koin, Dagger, Hilt, Coroutine, Flow, Leakcanary, Proguard, JUnit, Mockito, and more.",
         src: others,
     },
@@ -89,7 +89,7 @@ const Tools = () => {
                                     <p className="typography-title !text-[30px] !leading-[30px] dark:text-base-light text-base-dark">
                                         {e?.title}
                                     </p>
-                                    <p className="typography-desc dark:text-grey-light-active text-base-dark-light ">
+                                    <p className="typography-desc dark:text-grey-light-active text-base-dark-light">
                                         {e?.desc}
                                     </p>
                                 </div>

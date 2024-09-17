@@ -60,14 +60,21 @@ const Work = () => {
                   />
                 </motion.div>
               </Grid>
-              <Grid item container xs={12} spacing="16px" alignItems="start">
+              <Grid item container xs={12} spacing="8px" alignItems="start">
                 <Grid item xs={12}>
-                  <p className="typography-title !text-[30px] !leading-[40px] dark:text-base-light text-base-dark">
+                  <p className="typography-title !text-[30px] !leading-[40px] dark:text-base-light text-base-dark mt-4">
                     {data?.title}
                   </p>
                 </Grid>
                 <Grid item xs={12}>
-                  <p className="typography-desc dark:text-grey-light-active text-base-dark-light">
+                  <p className="typography-desc dark:text-grey-light-active text-base-dark-light"
+                     style={{
+                         display: '-webkit-box',
+                         WebkitBoxOrient: 'vertical',
+                         overflow: 'hidden',
+                         WebkitLineClamp: 2,
+                         textOverflow: 'ellipsis',
+                     }}>
                     {data?.desc}
                   </p>
                 </Grid>

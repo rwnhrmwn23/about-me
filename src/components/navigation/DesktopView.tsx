@@ -19,7 +19,7 @@ const DesktopView = ({
   return (
     <div className="sticky top-0 h-[100px] p-[12px] items-center justify-between dark:bg-base-dark bg-base-light z-10 mb:hidden sm:hidden md:hidden lg:flex xl:flex">
       <div className="flex flex-row items-center gap-[40px] px-[18px] py-[30px]">
-        <LinkComponent href="/#home">
+        <LinkComponent href="#Home">
           <div className="cursor-pointer">
             <Logo colorTheme={colorTheme} />
           </div>

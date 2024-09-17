@@ -18,7 +18,7 @@ const SidebarIcon = ({
     dark: isOpen ? closedark : burgerdark,
   };
 
-  return <Image key={logo[colorTheme]} alt="Har.." src={logo[colorTheme]} />;
+  return <Image key={logo[colorTheme]} alt="Irw.." src={logo[colorTheme]} />;
 };
 
 export default SidebarIcon;

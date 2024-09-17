@@ -21,7 +21,7 @@ const Logo = ({ colorTheme }: { colorTheme: string }) => {
         key={colorTheme === "light" ? logoDark : logoLight}
         width={40}
         height={40}
-        alt="Har.."
+        alt="Irw.."
         src={colorTheme === "light" ? logoDark : logoLight}
         loading="lazy"
       />

@@ -13,7 +13,7 @@ const poppins = Poppins({
 const title = "Irwan Hermawan | Mobile Developer";
 const description =
   "Irwan Hermawan is a passionate Mobile Developer specializing in Android Kotlin and Multiplatform using KMP or Flutter. Based in Jakarta, Indonesia. Hire Irwan for Mobile App Development";
-const url = "https://haryarrahman.vercel.app/";
+const url = "https://irwan-hermawan.vercel.app/";
 
 export const metadata = {
   title: title,
@@ -27,8 +27,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <Head>
-        <script
+    <Head>
+      <script
           dangerouslySetInnerHTML={{
             __html: `
         try {
@@ -40,26 +40,27 @@ export default function RootLayout({
         } catch (_) {}
       `,
           }}
-        />
-        <meta name="theme-color" content="#0e0e0e" />
-        <meta name="msapplication-navbutton-color" content="#0e0e0e" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="#0e0e0e" />
+      />
+      <meta name="theme-color" content="#0e0e0e"/>
+      <meta name="msapplication-navbutton-color" content="#0e0e0e"/>
+      <meta name="apple-mobile-web-app-status-bar-style" content="#0e0e0e"/>
 
-        <title>{title}</title>
+      <title>{title}</title>
 
-        <meta name="description" content={description} />
+      <meta name="description" content={description}/>
 
-        <meta property="og:title" content={title} />
-        <meta property="og:description" content={description} />
-        <meta property="og:image" content={logodark} />
-        <meta property="og:url" content={url} />
+      <meta property="og:title" content={title}/>
+      <meta property="og:description" content={description}/>
+      <meta property="og:image" content={logodark}/>
+      <meta property="og:url" content={url}/>
 
-        <meta name="twitter:title" content={title} />
-        <meta name="twitter:description" content={description} />
-        <meta name="twitter:image" content={logodark} />
-        <meta name="twitter:card" content={logodark} />
-      </Head>
-      <body className={poppins.className}>{children}</body>
+      <meta name="twitter:title" content={title}/>
+      <meta name="twitter:description" content={description}/>
+      <meta name="twitter:image" content={logodark}/>
+      <meta name="twitter:card" content={logodark}/>
+
+    </Head>
+    <body className={poppins.className}>{children}</body>
     </html>
   );
 }
