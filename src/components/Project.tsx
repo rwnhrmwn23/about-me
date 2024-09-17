@@ -11,13 +11,13 @@ import { motion } from "framer-motion";
 
 const Project = () => {
   return (
-    <WrapperSection id="Project">
+    <WrapperSection id="Projects">
       <div className="flex flex-col gap-[20px] mt-[20px]">
         <p className="typography-title-mobile lg:hidden dark:text-base-light text-base-dark">
-          Project
+            Projects
         </p>
         <p className="typography-title mb:hidden lg:block dark:text-base-light text-base-dark">
-            Project
+            Projects
         </p>
         <div className="flex flex-row gap-[4px]">
           <div className="h-[4px] w-[130px] dark:bg-base-light bg-base-dark" />
