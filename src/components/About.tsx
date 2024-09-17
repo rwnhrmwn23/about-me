@@ -1,7 +1,6 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
 import WrapperSection from "./WrapperSection";
-import ScrollLink from "@/components/ScrollLink";
 
 const About = () => {
   return (
@@ -46,14 +45,14 @@ const About = () => {
               <br/>
               <br/>
 
-              Fast-forward to today, I've contributed to the development and enhancement of multiple mobile apps.
+              Fast-forward to today, I’ve contributed to the development and enhancement of multiple mobile apps.
               My focus has always been on clean architecture, performance optimization, skilled in team collaboration,
               and delivering high-quality, results-driven applications that exceed expectations.
 
               <br/>
               <br/>
 
-              In addition to my work in Android, I'm currently expanding my skill set by learning Flutter and
+              In addition to my work in Android, I’m currently expanding my skill set by learning Flutter and
               Kotlin Multiplatform, with the aim of building cross-platform apps that can reach a wider audience.
               I’m excited about how these technologies will shape the future of app development and allow me
               to explore new possibilities.
