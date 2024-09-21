@@ -47,7 +47,7 @@ const About = () => {
 
               Fast-forward to today, I’ve contributed to the development and enhancement of multiple mobile apps.
               My focus has always been on clean architecture, performance optimization, skilled in team collaboration,
-              and delivering high-quality, results-driven applications that exceed expectations.
+              delivering high-quality, and results-driven applications that exceed expectations.
 
               <br/>
               <br/>
