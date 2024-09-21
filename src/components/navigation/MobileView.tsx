@@ -87,7 +87,7 @@ const MobileView = ({
               })}
 
               <div className="flex items-center h-[80px]">
-                <SocialMedia colorTheme={colorTheme} />
+                <SocialMedia />
               </div>
             </div>
           </div>
