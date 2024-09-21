@@ -13,7 +13,7 @@ const DarkModeContext = createContext<DarkModeContextType | undefined>(
 );
 
 export const DarkModeProvider = ({
-  initialTheme = "dark",
+  initialTheme = "light",
   children,
 }: {
   initialTheme?: string;

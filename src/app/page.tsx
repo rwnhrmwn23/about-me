@@ -30,11 +30,11 @@ export default function Home() {
   let initialTheme;
 
   if (typeof window !== "undefined") {
-    initialTheme = localStorage.getItem("theme") || "dark";
+    initialTheme = localStorage.getItem("theme") || "light";
   }
 
   return (
-    <DarkModeProvider initialTheme={initialTheme || "dark"}>
+    <DarkModeProvider initialTheme={initialTheme || "light"}>
       <Content />
     </DarkModeProvider>
   );
