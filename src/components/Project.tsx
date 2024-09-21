@@ -67,7 +67,14 @@ const Project = () => {
                   </p>
                 </Grid>
                 <Grid item xs={12}>
-                  <p className="typography-desc dark:text-grey-light-active text-base-dark-light">
+                  <p className="typography-desc dark:text-grey-light-active text-base-dark-light"
+                     style={{
+                         display: '-webkit-box',
+                         WebkitLineClamp: 2,
+                         WebkitBoxOrient: 'vertical',
+                         overflow: 'hidden',
+                         textOverflow: 'ellipsis',
+                     }}>
                     {data?.desc}
                   </p>
                 </Grid>

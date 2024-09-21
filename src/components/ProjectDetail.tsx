@@ -65,21 +65,15 @@ const ProjectDetail = ({ id }: { id: string }) => {
 
           {/* Desc and Detail Section with same width */}
           <Grid item container xs={12} spacing="10px">
-            {/* Description */}
-            <Grid item xs={12} lg={8}>
-              <AnimateComponent>
-                <p className="typography-title !text-[25px] !leading-[40px] dark:text-base-light text-base-dark">
-                  {data?.desc}
-                </p>
-              </AnimateComponent>
-            </Grid>
-
-            {/* Detail */}
             <Grid item xs={12} lg={8}>
               <AnimateComponent>
                 <p className="typography-desc dark:text-grey-light-active text-base-dark-light text-justify">
-                  {data?.detail}
+                  {data?.desc}
                 </p>
+                <br/>
+                <p className="typography-desc dark:text-grey-light-active text-base-dark-light text-justify"
+                    dangerouslySetInnerHTML={{__html: data?.detail || ""}}
+                />
               </AnimateComponent>
             </Grid>
           </Grid>
@@ -116,6 +110,26 @@ const ProjectDetail = ({ id }: { id: string }) => {
                 <div className="h-[4px] w-[4px] dark:bg-base-light bg-base-dark" />
               </div>
             </AnimateComponent>
+          </Grid>
+
+          {/* Timeline Section */}
+          <Grid item container xs={12} spacing="10px">
+            <Grid item container xs={12}>
+              <Grid item lg={1.5} md={1.5} xs={3.5}>
+                <AnimateComponent>
+                  <p className="typography-desc dark:text-base-light text-base-dark font-bold">
+                    Timeline
+                  </p>
+                </AnimateComponent>
+              </Grid>
+              <Grid item>
+                <AnimateComponent>
+                  <p className="typography-desc dark:text-base-light text-base-dark font-bold">
+                    : {data?.timeline}
+                  </p>
+                </AnimateComponent>
+              </Grid>
+            </Grid>
           </Grid>
 
           {/* Tech Stack Section */}
