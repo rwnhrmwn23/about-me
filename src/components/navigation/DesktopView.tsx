@@ -36,7 +36,7 @@ const DesktopView = ({
       </div>
 
       <div className="px-[18px] py-[30px]">
-        <SocialMedia colorTheme={colorTheme} />
+        <SocialMedia />
       </div>
     </div>
   );
