@@ -3,6 +3,7 @@ import indoalamsari from "../../../public/project/indoalamsari.png";
 import inidoc from "../../../public/project/inidoc.png";
 import tanipro from "../../../public/project/tanipro.png";
 import kerjasehat from "../../../public/project/kerjasehat.png";
+import campber from "../../../public/project/campber.png";
 
 export const projects = [
     // 1. MyIndihome
@@ -32,10 +33,33 @@ export const projects = [
             "UIKit"
         ],
         img: myih,
-        timeline: "Jan 2022 - Present",
+        timeline: "Jan 2022 - Des 2024",
         onClick: () => window.open("https://play.google.com/store/apps/details?id=com.telkom.indihome.external", "_blank"),
     },
-    // 2. IndoAlamSari
+    // 2. Campber
+    {
+        id: "campber",
+        title: "Campber",
+        desc: "The Campber app is a camping booking platform designed to simplify the " +
+            "process of planning camping activities online",
+        detail:
+            "Here’s a breakdown of its main features:" +
+            "<br><br>Main Screen and Introduction, When users open the app, they’re greeted with the Campber logo and a brief introduction about the app’s purpose. This app is aimed at helping travelers or nature enthusiasts book camping tickets conveniently." +
+            "<br><br>Camping Information, Once logged in, users can browse through various available camping locations, complete with descriptions and photos of popular spots. This helps users choose the most suitable location based on their preferences." +
+            "<br><br>Date Selection and Number of Participants, On the booking page, users can select the start and end dates for their camping session. They can also specify the number of adults and children participating in the camping activity. The total price will automatically be displayed based on the number of participants and the duration of the stay." +
+            "<br><br>Terms and Conditions, In the checkout section, the app provides important notes, such as age restrictions for children, check-in and check-out times, and promotional information if applicable." +
+            "<br><br>Payment Status, After completing the payment process, users receive a validated payment status along with their booking details. This includes the transaction number, user name, number of participants, dates, and total price. This confirmation must be shown before entering the camping site." +
+            "<br><br>The app provides an intuitive and easy booking experience, allowing users to plan their camping activities efficiently and conveniently.",
+        tech: [
+            "Android",
+            "Kotlin",
+            "Firebase"
+        ],
+        img: campber,
+        timeline: "August 2022",
+        onClick: () => {},
+    },
+    // 3. IndoAlamSari
     {
         id: "indoalamsari",
         title: "Indo Alam Sari",
@@ -63,7 +87,7 @@ export const projects = [
         timeline: "Sept - Nov 2022",
         onClick: () => {},
     },
-    // 3. IniDoc
+    // 4. IniDoc
     {
         id: "inidoc",
         title: "IniDoc",
@@ -94,7 +118,7 @@ export const projects = [
         timeline: "May - Jul 2021",
         onClick: () => window.open("https://play.google.com/store/apps/details?id=com.kinikumuda.inidoc", "_blank"),
     },
-    // 4. TaniPro
+    // 5. TaniPro
     {
         id: "tanipro",
         title: "TaniPro",
@@ -126,7 +150,7 @@ export const projects = [
         timeline: "Sept - Des 2021",
         onClick: () => {},
     },
-    // 5. Kerja Sehat
+    // 6. Kerja Sehat
     {
         id: "kerjasehat",
         title: "Kerja Sehat",

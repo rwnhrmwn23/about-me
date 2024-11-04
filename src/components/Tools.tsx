@@ -11,7 +11,7 @@ import {
     SiKtor
 } from "react-icons/si";
 import {FaAndroid, FaGit, FaGoogle, FaJava, FaJira, FaSyncAlt} from "react-icons/fa";
-import {GiBroadDagger, GiDaggers, GiDiamondHilt, GiJetpack, GiSwordHilt} from "react-icons/gi";
+import {GiBroadDagger, GiJetpack, GiSwordHilt} from "react-icons/gi";
 import {TbPacman} from "react-icons/tb";
 
 const Tools = () => {
