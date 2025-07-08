@@ -14,10 +14,10 @@ const Hero = () => {
                 <div className="flex flex-col items-start mb:gap-[20px] lg:gap-[40px]">
                     <div>
                         <p className="mt-[-100px] typography-hello-mobile lg:hidden dark:text-base-light text-base-dark">
-                            Irwan Hermawan, Fullstack Mobile Engineer
+                            Irwan Hermawan, Mobile App Developer
                         </p>
                         <p className="mt-[-100px] typography-hello mb:hidden lg:block dark:text-base-light text-base-dark">
-                            Irwan Hermawan, Fullstack Mobile Engineer
+                            Irwan Hermawan, Mobile App Developer
                         </p>
                     </div>
 

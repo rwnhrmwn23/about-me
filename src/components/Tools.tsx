@@ -5,7 +5,6 @@ import {
     SiFlutter,
     SiJetpackcompose,
     SiKotlin,
-    SiMocha,
     SiMysql,
     SiNestjs,
     SiNodedotjs,
@@ -14,6 +13,7 @@ import {
     SiTypescript
 } from "react-icons/si";
 import {DiJavascript} from "react-icons/di";
+import {FaJava} from "react-icons/fa";
 
 type ToolItem = {
     name: string;
@@ -25,10 +25,11 @@ type TabType = "Mobile" | "Backend";
 const toolsData: Record<TabType, ToolItem[]> = {
     Mobile: [
         { name: 'Kotlin', icon: <SiKotlin /> },
-        { name: 'Kotlin Multiplatform', icon: <SiKotlin /> },
-        { name: 'Jetpack Compose', icon: <SiJetpackcompose /> },
-        { name: 'Swift', icon: <SiSwift /> },
+        { name: 'KMP', icon: <SiKotlin /> },
+        { name: 'Compose', icon: <SiJetpackcompose /> },
         { name: 'Flutter', icon: <SiFlutter /> },
+        { name: 'Swift', icon: <SiSwift /> },
+        { name: 'Java', icon: <FaJava /> },
     ],
     Backend: [
         { name: 'Javascript', icon: <DiJavascript /> },
@@ -37,7 +38,6 @@ const toolsData: Record<TabType, ToolItem[]> = {
         { name: 'NestJS', icon: <SiNestjs /> },
         { name: 'MySQL', icon: <SiMysql /> },
         { name: 'Postgres', icon: <SiPostgresql /> },
-        { name: 'Mocha', icon: <SiMocha /> },
     ]
 };
 
@@ -81,7 +81,7 @@ const Tools = () => {
 
                 {/* Tools Grid */}
                 <Grid container justifyContent="center">
-                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 p-8">
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-8 p-8">
                         {toolsData[activeTab].map((tool, index) => (
                             <div key={index} className="flex flex-col items-center text-center">
                                 <span className="text-3xl sm:text-4xl text-gray-800 dark:text-gray-200">

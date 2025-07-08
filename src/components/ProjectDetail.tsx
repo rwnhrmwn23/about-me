@@ -65,7 +65,7 @@ const ProjectDetail = ({ id }: { id: string }) => {
 
           {/* Desc and Detail Section with same width */}
           <Grid item container xs={12} spacing="10px">
-            <Grid item xs={12} lg={8}>
+            <Grid item xs={12} lg={12}>
               <AnimateComponent>
                 <p className="typography-desc dark:text-grey-light-active text-base-dark-light text-justify">
                   {data?.desc}
@@ -78,14 +78,14 @@ const ProjectDetail = ({ id }: { id: string }) => {
             </Grid>
           </Grid>
 
-          {/* Visit Website */}
+          {/* See Application */}
           {data?.onClick && (
               <Grid item>
                 <div onClick={data?.onClick}>
                   <AnimateComponent>
-                    <div className="flex flex-row items-center py-[4px] pl-[8px] pr-[6px] rounded-[5px] border border-solid dark:border-base-light-active border-base-dark-active cursor-pointer dark:hover:bg-[#ffffff1a] hover:bg-base-light-hover">
+                    <div className="flex flex-row py-[8px] pl-[18px] pr-[12px] rounded-[5px] border border-solid dark:border-base-light-active border-base-dark-active cursor-pointer dark:hover:bg-[#ffffff1a] hover:bg-base-light-hover">
                       <p className="typography-desc dark:text-grey-light-active text-base-dark-light">
-                        Visit Website
+                        See Application
                       </p>
                       <Image
                           style={{
@@ -144,7 +144,7 @@ const ProjectDetail = ({ id }: { id: string }) => {
               </Grid>
             </Grid>
 
-            <Grid item container lg={8} md={10} xs={12} spacing="10px">
+            <Grid item container lg={12} md={10} xs={12} spacing="10px">
               {data?.tech?.map((tech, idx) => (
                   <Grid key={idx} item>
                     <AnimateComponent>

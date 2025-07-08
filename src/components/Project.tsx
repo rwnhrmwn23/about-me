@@ -34,8 +34,8 @@ const Project = () => {
               key={idx}
               item
               container
-              lg={6}
-              md={12}
+              lg={4}
+              md={6}
               xs={12}
               alignItems="start"
             >
@@ -83,7 +83,7 @@ const Project = () => {
                   <Grid item>
                     <Link href={`/project/${data?.id}`}>
                       <div className="flex flex-row py-[8px] pl-[18px] pr-[12px] rounded-[5px] border border-solid dark:border-base-light-active border-base-dark-active cursor-pointer dark:hover:bg-[#ffffff1a] hover:bg-base-light-hover">
-                        <p className="typography-desc dark:text-grey-light-active text-base-dark-light">{`See Details   >`}</p>
+                        <p className="typography-desc dark:text-grey-light-active text-base-dark-light">{`See Details`}</p>
                       </div>
                     </Link>
                   </Grid>
