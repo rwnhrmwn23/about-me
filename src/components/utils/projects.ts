@@ -5,10 +5,10 @@ import tanipro from "../../../public/project/tanipro.png";
 import kerjasehat from "../../../public/project/kerjasehat.png";
 import campber from "../../../public/project/campber.png";
 import gutenread from "../../../public/project/gutenread.png";
+import pokedex from "../../../public/project/pokedex.png";
 import mysiis from "../../../public/project/mysiis.png";
 
 export const projects = [
-    // MyIndihome
     {
         id: "gutenread",
         title: "Gutenread",
@@ -32,6 +32,32 @@ export const projects = [
         timeline: "July 2025",
         onClick: () =>
             window.open("https://github.com/rwnhrmwn23/guten-read", "_blank"),
+    },
+    {
+        id: "pokedex",
+        title: "Pokedex",
+        desc:
+            "Pokedex is a multiplatform app built with Kotlin Multiplatform and Jetpack Compose. It allows users to search for Pokémon, browse an infinite list, and view detailed information — all using clean architecture and the MVI pattern.",
+        detail:
+            "Pokedex is a Kotlin Multiplatform application developed using Jetpack Compose for UI, designed with clean architecture principles and the MVI pattern to ensure scalability and testability.\n" +
+            "<br><br> The app features a seamless Pokémon search powered by the PokeAPI, an infinite scroll list for exploring all available Pokémon, and a detailed view for each Pokémon including types, stats, and abilities.\n" +
+            "<br><br> I implemented the app with a clear separation of concerns using the data → domain → presentation structure. State management is handled via the MVI (Model-View-Intent) pattern, making it easier to maintain and extend.\n" +
+            "<br><br> The multiplatform setup allows the business logic and API layer to be shared across Android and iOS, while the UI layer is fully built with Jetpack Compose on Android.\n" +
+            "<br><br> For dependency injection, I used Koin. Networking is handled with Ktor and JSON parsing with Kotlinx Serialization. Navigation across screens is implemented with navigation component. Image loading is optimized using Kamel.\n" +
+            "<br><br> Key features include reactive UI state, loading indicators, error handling, and consistent data flow between layers. The entire architecture was designed to be modular, testable, and performance-friendly.",
+        tech: [
+            "Kotlin Multiplatform",
+            "Clean Architecture",
+            "Jetpack Compose",
+            "MVI Pattern",
+            "Koin",
+            "Ktor",
+            "Kamel",
+        ],
+        img: pokedex,
+        timeline: "June 2025",
+        onClick: () =>
+            window.open("https://github.com/rwnhrmwn23/pokedex-kmp.git", "_blank"),
     },
     {
         id: "mysiis",
